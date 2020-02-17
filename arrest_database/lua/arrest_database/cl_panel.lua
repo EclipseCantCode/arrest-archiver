@@ -127,7 +127,7 @@ function arrestData:createArrestInput()
     end
     ]]
     -- Found the problem is OnRowSelected.... Adding to a dlistview already made brakes it?
-    -- When put back it will be at the bottom. Far too lazy to fix, Shock/Riot can not fuckup
+    -- When put back it will be at the bottom. Far too lazy to fix, future me problem if I ever use this
     function commitedCrimes:OnClickLine(Line, bClear)
         self:RemoveLine(Line:GetID())
         possibleCrimes:AddLine(Line:GetValue(1))
